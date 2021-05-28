@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
+
+/* TIPOGRAFÍA */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #cd9834;
+}
+
+
+
+.slider-1 {
+    background-image: url("../../Chevrolet/images/samantha-fortney-ddXo3DVwOoI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-size: cover;
+
+}
+
+.slider-2 {
+    background-image: url("../../Chevrolet/images/chevy-safety-masthead-01.webp");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: cover;
+
+}
+
+.slider-3 {
+    background-image: url("../../Chevrolet/images/jan-silverado-1500-hp-masthead-xl-2000x1000.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 35%;
+    background-size: cover;
+
+}
+
+.slider-100vh {
+    height: 100vh;
+}
+
+h1, .h1 {
+    
+    font-size: 3.25rem; /*52 pixeles*/
+    font-weight: 600;
+}
+
+
+
+.bg-opacidad {
+    /* background-color: rgba(28, 16, 11, 0.60); */
+    background-color: rgb(128, 128, 128, 0.6);
+    
+}
+
+.border-card {
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius: 3rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .carousel-item-mine {
+        position: relative;
+        display: none;
+        float: left;
+        
+        margin-right: -100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: -webkit-transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    
+    .d-md-block-mine {
+      display: block !important;
+    }
+}
+
+/* COLORES */
+.blanco {
+    color: #ecF4F1;
+}
+
+.dorado {
+    color: #cd9834;
+}
+
+.gris {
+    color: #808080
+}
+
+.verde {
+    color: #081b19;
+}
+
+.negro {
+    color: #070502;
+}
+
+.bg-blanco {
+    background-color: #ecF4F1;
+}
+
+.bg-dorado {
+    background-color: #cd9834;
+}
+
+.bg-gris {
+    background-color: #808080
+}
+
+.bg-verde {
+    background-color: #081b19;
+}
+
+.bg-negro {
+    background-color: #070502;
+}
+
+
+
+/* Tamaños de letras */
+h3, .h3 {
+    font-size: 1.624rem; /*26 pixeles */
+    font-weight: 600;
+}
+
+
+/* OTROS */
+.blur-custom {
+    background-color: black;
+    filter: opacity(1);
+    filter: blur(1rem);
+    
+}
+.blur-custom-letras {
+    
+    filter:opacity(1);
+    filter: blur(0);
+    filter: brightness(100%)
+    
+}
+
+.blur-custom2 {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+  
+  }
+
+
+
+  /* ENLACES Y BOTONES */
+a {
+    color: #cd9834;
+}
+
+a:hover {
+    color: #dfb646;
+}
+
+.bg-dorado a, .bg-marron a {
+    color: rgbA(236, 244, 241, 0.75)
+}
+
+.bg-dorado a:hover, .bg-marron a:hover {
+    color: #ecF4F1;
+}
+
+.btn-dorado {
+    background-color: #070502;
+    color: #cd9834;
+    
+    border: 1px solid #cd9834;
+}
+
+.btn-dorado:hover {
+    background-color: #cd9834;
+    color: #ecF4F1;
+    border: 1px solid #070502;
+}
+
+.btn-transparente {
+    background-color: transparent;
+    color: #ecF4F1;
+    
+    border: 1px solid #ecF4F1;
+}
+
+.btn-transparente:hover {
+    background-color: #070502;
+    color: #ecF4F1;
+    border: 1px solid #070502;
+}
+
+.nav-item {
+    padding-right: 1rem !important;
+}

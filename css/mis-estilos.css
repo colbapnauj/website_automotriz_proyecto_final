@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
 
+:root {
+	--anaranjado: #cd9834;
+    --blanco: #ecf4f1;
+    --gris: #808080;
+    --verde: #081b19;
+    --negro: #070502;
+
+}
+
 /* TIPOGRAFÍA */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    color: #070502;
+    color: var(--negro);
 }
 
 
 
 .slider-1 {
-    background-image: url("../../Chevrolet/images/portada/portada-1.png");
+    background-image: url("../images/portada/portada-1.png");
     background-repeat: no-repeat;
     background-position-x: 53%;
     background-size: cover;
@@ -19,7 +28,7 @@ body {
 }
 
 .slider-2 {
-    background-image: url("../../Chevrolet/images/portada/portada-2.jpg");
+    background-image: url("../images/portada/portada-2.jpg");
     background-repeat: no-repeat;
     background-position-x: 60%;
     background-size: cover;
@@ -28,7 +37,7 @@ body {
 }
 
 .slider-3 {
-    background-image: url("../../Chevrolet/images/portada/portada-3.png");
+    background-image: url("../images/portada/portada-3.png");
     background-repeat: no-repeat;
     background-position-x: 60%;
     background-size: cover;
@@ -112,15 +121,29 @@ h6, .h6 {
 }
 
 .border-card {
-    border: 1px solid #cd9834;
+    border: 1px solid var(--anaranjado);
     border-radius: 0.75rem;
 }
 
 .border-custom {
-    border: 1px solid #ffffff;
+    border: 1px solid var(--blanco);
     border-radius: 2rem;
 }
 
+.border-tr {
+    border: 1px solid var(--blanco);
+    border-top-right-radius: 3rem;
+}
+
+.border-bl {
+    border: 1px solid var(--blanco);
+    border-bottom-left-radius: 2.5rem;
+}
+
+.border-services {
+    border: 1px solid var(--blanco);
+    border-radius: 0.5rem 3rem 0.5rem 2rem;
+}
 
 
 /* @media (max-width: 768px) {
@@ -149,43 +172,43 @@ h6, .h6 {
 
 /* COLORES */
 .blanco {
-    color: #ecF4F1;
+    color: var(--blanco);
 }
 
 .dorado {
-    color: #cd9834;
+    color: var(--anaranjado);
 }
 
 .gris {
-    color: #808080
+    color: var(--gris)
 }
 
 .verde {
-    color: #081b19;
+    color: var(--verde);
 }
 
 .negro {
-    color: #070502;
+    color: var(--negro);
 }
 
 .bg-blanco {
-    background-color: #ecF4F1;
+    background-color: var(--blanco);
 }
 
 .bg-dorado {
-    background-color: #cd9834;
+    background-color: var(--anaranjado);
 }
 
 .bg-gris {
-    background-color: #808080
+    background-color: var(--gris)
 }
 
 .bg-verde {
-    background-color: #081b19;
+    background-color: var(--verde);
 }
 
 .bg-negro {
-    background-color: #070502;
+    background-color: var(--negro);
 }
 
 
@@ -225,7 +248,7 @@ h6, .h6 {
 
   /* ENLACES Y BOTONES */
 a {
-    color: #cd9834;
+    color: var(--anaranjado);
 }
 
 a:hover {
@@ -233,7 +256,7 @@ a:hover {
 }
 
 #top a {
-    color: #070502;
+    color: var(--negro);
     text-decoration: none;
 }
 
@@ -247,106 +270,106 @@ a:hover {
 }
 
 .bg-dorado a:hover, .bg-marron a:hover {
-    color: #ecF4F1;
+    color: var(--blanco);
 }
 
 .btn-dorado-blanco {
-    background-color: #cd9834;
-    color: #ecF4F1;
-    border: 1px solid #cd9834;
+    background-color: var(--anaranjado);
+    color: var(--blanco);
+    border: 1px solid var(--anaranjado);
 }
 
 .btn-dorado-blanco:hover {
     background-color: #ddaf59;
-    color: #ecF4F1;
-    border: 1px solid #cd9834;
+    color: var(--blanco);
+    border: 1px solid var(--anaranjado);
 }
 
 .btn-blanco-negro {
     background-color: transparent;
-    color: #070502;
-    border: 1px solid #cd9834;
+    color: var(--negro);
+    border: 1px solid var(--anaranjado);
 }
 
 .btn-blanco-negro:hover {
-    background-color: #cd9834;
-    color: #ecF4F1;
-    border: 1px solid #cd9834;
+    background-color: var(--anaranjado);
+    color: var(--blanco);
+    border: 1px solid var(--anaranjado);
 }
 
 .btn-negro-blanco {
-    background-color: #ecF4F1;
-    color: #070502;
-    border: 1px solid #ecF4F1;
+    background-color: var(--blanco);
+    color: var(--negro);
+    border: 1px solid var(--blanco);
 }
 
 .btn-negro-blanco:hover {
-    background-color: #ecF4F1;
-    color: #ecF4F1;
-    border: 1px solid #cd9834;
+    background-color: var(--anaranjado);
+    color: var(--blanco);
+    border: 1px solid var(--anaranjado);
 }
 
 .btn-blanco-transparente {
     background-color: transparent;
-    color: #ecF4F1;
-    border: 1px solid #ecF4F1;
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
 }
 
 .btn-blanco-transparente:hover {
     background-color: transparent;
-    color: #ecF4F1;
-    border: 1px solid #cd9834;
+    color: var(--blanco);
+    border: 1px solid var(--anaranjado);
 }
 
 
 .btn-dorado {
-    background-color: #070502;
-    color: #cd9834;
+    background-color: var(--negro);
+    color: var(--anaranjado);
     
-    border: 1px solid #cd9834;
+    border: 1px solid var(--anaranjado);
 }
 
 .btn-dorado:hover {
-    background-color: #cd9834;
-    color: #ecF4F1;
-    border: 1px solid #070502;
+    background-color: var(--anaranjado);
+    color: var(--blanco);
+    border: 1px solid var(--negro);
 }
 
 .btn-dorado-negro {
     background: transparent;
-    color: #070502;
-    border: 1px solid #cd9834;
+    color: var(--negro);
+    border: 1px solid var(--anaranjado);
 }
 
 .btn-dorado-negro:hover {
-    background-color: #cd9834;
-    color: #070502;
-    border: 1px solid #cd9834;
+    background-color: var(--anaranjado);
+    color: var(--negro);
+    border: 1px solid var(--anaranjado);
 }
 
 .btn-transparente {
     background-color: transparent;
-    color: #ecF4F1;
+    color: var(--blanco);
     
-    border: 1px solid #ecF4F1;
+    border: 1px solid var(--blanco);
 }
 
 .btn-transparente:hover {
-    background-color: #070502;
-    color: #ecF4F1;
-    border: 1px solid #070502;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: 1px solid var(--negro);
 }
 
 
 .btn-blanco {
-    background-color: #070502;
-    color: #ecF4F1;
+    background-color: var(--negro);
+    color: var(--blanco);
     
 }
 
 .btn-blanco:hover {
-    background-color: #808080;
-    color: #ecF4F1;
+    background-color: var(--gris);
+    color: var(--blanco);
     
 }
 
@@ -376,4 +399,33 @@ a:hover {
 
 .block {
     display: block
+}
+
+
+.pie-link {
+    font-weight: 600;
+    
+    display: block;
+    text-decoration: none;
+    padding: 0;
+    padding-bottom: 0.5rem;
+}
+
+.pie-link a {
+    color: var(--gris);
+}
+
+.pie-link a:hover {
+    color: var(--negro);
+    text-decoration: none;
+}
+
+.d-relative {
+    position: relative;
+}
+
+.d-absolute {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
 }
